@@ -32,5 +32,10 @@ Adding a standard user is imperative. `useradd -m -G wheel -s /bin/bash <usernam
 #### Networking
 `systemctl enable systemd-networkd` will allow the network manager to start at startup. Adding `nameserver <DNS server>` to `/etc/resolv.conf` will allow you to customize your DNS server.
 #### Installing a desktop interface
-I will show how to install GNOME and XFCE. `pacman -S xorg lightdm lightdm-gtk-greeter` will be used for both, so you can go ahead and run that. `pacman -S xfce4 xfce4-goodies` installs xfce, and `pacman -S gnome gnome-extra` installs GNOME.
+I will show how to install GNOME and XFCE. `pacman -S xorg lightdm lightdm-gtk-greeter` will be used for both, so you can go ahead and run that. `pacman -S xfce4 xfce4-goodies` installs xfce, and `pacman -S gnome gnome-extra` installs GNOME. You will have to run the command `systemctl enable lightdm.service`. 
+#### Audio
+If you want audio, run `pacman -S alsa-utils pulseaudio-alsa` and then `systemctl enable lightdm.service`.
+
+# Here's my command log
+
 ## Thank you for reading!
