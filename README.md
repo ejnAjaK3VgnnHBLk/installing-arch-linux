@@ -10,6 +10,9 @@ I will be using virtualbox for this tutorial, but it should work for physical ha
 ### Short aside for virtualbox
 Once you have created your virtual machine, you will need to go to Settings -> Storage and under Controller: IDE, select the circle with a plus and then "Choose disk". Now select the ISO file that you just downloaded.
 
+### Short aside for installing on physical hardware.
+You may need to find the drivers specific for your [Wifi Card](https://wiki.archlinux.org/index.php/Wireless_network_configuration) and Graphics Card ([NVIDIA](https://wiki.archlinux.org/index.php/Wireless_network_configuration), [AMD](https://wiki.archlinux.org/index.php/AMDGPU), and [Intel](https://wiki.archlinux.org/index.php/intel_graphics). If you need any of these drivers, I'd recommend reading the ENTIRE page.)
+
 ## Installation
 ### Starting up
 As you start up the system, select "Boot Arch Linux". At the CLI (command line interface), ensure that your ethernet is working, and type `ping www.google.com`. Hit CTRL+C to stop it.
